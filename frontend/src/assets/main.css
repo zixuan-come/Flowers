@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全局背景渐变 */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fdf2f8 0%, #ede9fe 30%, #dbeafe 60%, #dcfce7 100%);
+  background-attachment: fixed;
+}
+
+/* 代码块样式 */
+.code-block {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.code-block pre {
+  margin: 0;
+  padding: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  overflow-x: auto;
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* 弹窗遮罩 */
+.modal-mask {
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* 卡片悬浮动效 */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.1);
+}
+
+/* 淡入动画 */
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 语言标签颜色 */
+.lang-python { background: #3776ab; color: white; }
+.lang-javascript { background: #f7df1e; color: #333; }
+.lang-shell { background: #4eaa25; color: white; }
+.lang-bash { background: #4eaa25; color: white; }
+.lang-go { background: #00add8; color: white; }
+.lang-rust { background: #ce422b; color: white; }
+.lang-java { background: #ed8b00; color: white; }
+.lang-sql { background: #336791; color: white; }
+.lang-html { background: #e34c26; color: white; }
+.lang-css { background: #264de4; color: white; }
+.lang-default { background: #6b7280; color: white; }
