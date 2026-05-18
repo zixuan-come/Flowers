@@ -10,7 +10,6 @@ CODE = "888888"                    # 验证码
 SEND_TOKEN = "optional-provider-token"
 # ================================
 
-
 def login(email: str) -> dict:
     payload = {
         "email": email,
