@@ -2,12 +2,12 @@ import csv
 import requests
 
 # ============ 配置区 ============
-LOGIN_URL = "https://api.claw3.ai/api/v1/user/login"
+LOGIN_URL = "https://your-api-domain.com/api/v1/user/login"
 EMAIL_FILE = "emails.csv"          # 邮箱来源文件
 OUTPUT_FILE = "tokens.csv"         # token输出文件
 TOKEN_COUNT = 90                    # 要生成的token数量，0表示全部
-CODE = "888888"                    # 验证码
-SEND_TOKEN = "optional-provider-token"
+CODE = "000000"                    # 验证码
+SEND_TOKEN = "your-provider-token"
 # ================================
 
 def login(email: str) -> dict:
